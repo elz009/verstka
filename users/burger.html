@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бургер Магазин</title>
+    <link rel="stylesheet" href="../deps/css/my_css.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../deps/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../deps/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../deps/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../deps/favicon/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .burger {
+            margin-bottom: 2em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .burger-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .burger-info {
+            padding: 1em;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Бургер Магазин</h1>
+    </header>
+
+    <main>
+        <h2>Наши Вкусные Бургеры</h2>
+
+        <div class="burger">
+            <img class="burger-image" src="burger_image.jpg" alt="Delicious Burger Image">
+            <div class="burger-info">
+                <h3>Классический Бургер</h3>
+                <p>Сочный говяжий стейк, свежие овощи, сыр и майонез в пышной булочке.</p>
+                <p>Цена: $5.99</p>
+                <button>Добавить в корзину</button>
+            </div>
+        </div>
+
+        <!-- Add more burger items as needed -->
+
+    </main>
+
+</body>
+</html>

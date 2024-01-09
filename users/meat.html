@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deps/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="deps/css/my_css.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .meat-item {
+            margin-bottom: 2em;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+
+        .meat-item:hover {
+            transform: scale(1.02);
+        }
+
+        .meat-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .meat-item .info-container {
+            padding: 1.5em;
+        }
+
+        .meat-item h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .meat-item p {
+            color: #6c757d;
+            margin-bottom: 1em;
+        }
+
+        .meat-item button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .meat-item button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Meat Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meat Selection</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <!-- Content for Meat Page -->
+                    <div class="meat-item">
+                        <img src="path/to/meat_image.jpg" alt="Grilled Steak" class="img-fluid">
+                        <div class="info-container">
+                            <h2>Grilled Steak</h2>
+                            <p>Delicious grilled steak served with your choice of sides.</p>
+                            <p>Price: $14.99</p>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Add more meat items as needed -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Meat Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="deps/js/jquery/jquery-3.7.0.min.js"></script>
+    <script src="deps/js/jquery-events.js"></script>
+    <script src="deps/js/jquery-ajax.js"></script>
+    <script src="deps/js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
