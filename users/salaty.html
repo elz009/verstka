@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="deps/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="deps/css/my_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         @keyframes fadeIn {
             from {
@@ -21,7 +22,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #005086, #00a1c4);
+            background: rgb(70, 70, 202);
             color: #fff; /* Set text color to white for better visibility */
             font-family: 'Arial', sans-serif; /* Set a suitable font */
             margin: 0; /* Remove default margin to fill the entire viewport */
@@ -41,8 +42,14 @@
         }
 
         header a,
-        footer a {
-            color: #fff; /* Set link color to white */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
         section {
@@ -53,6 +60,16 @@
             text-align: center;
         }
 
+        .leftimg {
+            float:left; /* Выравнивание по левому краю */
+            margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+        }
+        .rightimg  {
+            float: right; /* Выравнивание по правому краю  */ 
+            margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+        }
+
+ 
     </style>
     <title>Salads Page</title>
 </head>
@@ -60,24 +77,36 @@
 <body>
     <header>
         <!-- Your navigation code goes here -->
-        <h1>Salads R Us</h1>
+        <h1>Salads</h1>
     </header>
 
     <section>
         <div class="container">
             <div class="row mt-1">
-                <div class="col-lg-2">
+                <div class="col-md-4">
                     <!-- Optional: Sidebar or additional content -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQviVzMt3PA-By8LSefLEZAU_0nZZbxG91Oww&usqp=CAU" 
+                            alt=""  width="100%">
                 </div>
-                <div class="col-lg-10">
+                <div class="col-md-8">
                     <!-- Content for Salads Page -->
-                    <h1 class="mt-5 pt-5">Fresh and Healthy Salads</h1>
+                    <h1 class="">Fresh and Healthy Salads</h1>
 
                     <div class="salad-item">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQviVzMt3PA-By8LSefLEZAU_0nZZbxG91Oww&usqp=CAU" alt="Salad Image" class="img-fluid">
-                        <h2>Greek Salad</h2>
-                        <p>A classic Greek salad with tomatoes, cucumbers, olives, feta cheese, and a light dressing.</p>
-                        <p>Price: $7.99</p>
+                        
+                        <h1>Greek Salad</h2>
+                        
+                        <h2>Cалат</h2>
+                        <p>
+                            Цезарь с Креветками и Авокадо
+                            Объединение свежих листьев римского     
+                            салата, нежных креветок и кремового 
+                            авокадо делает этот салат настоящим
+                             воплощением изысканности. Завершается 
+                             цезарь соусом с неповторимым вкусом.
+                           </p>
+                           <h2>Огуречный салат</h2>
+                            <p>Price: $7.99</p>
                         <a href="../index.html" target="_blank">
                             <button type="button">Добавить в корзину</button>
                         </a>
@@ -100,6 +129,7 @@
     <script src="deps/js/jquery-events.js"></script>
     <script src="deps/js/jquery-ajax.js"></script>
     <script src="deps/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
